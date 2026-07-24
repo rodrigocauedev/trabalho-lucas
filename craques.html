@@ -91,6 +91,23 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+      .navbar {
+        background-color: #0056b3 !important;
+      }
+      .foto-carrosel {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: bottom;
+      }
+      .carousel-caption {
+        color: white;
+        text-shadow: 2px 2px 8px black;
+      }
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+          filter: invert(1);
+      }
     </style>
   </head>
   <body>
@@ -192,7 +209,7 @@
     <header data-bs-theme="dark">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Brasileirão</a>
+          <a class="navbar-brand" href="index.html">Brasileirão</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -244,82 +261,49 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <svg
-              aria-hidden="true"
-              class="bd-placeholder-img"
-              height="100%"
-              preserveAspectRatio="xMidYMid slice"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
+            <img src="img/bola.jpg" alt="" class="foto-carrosel bd-placeholder-img">
             <div class="container">
               <div class="carousel-caption text-start">
-                <h1>Veja os últimos campeões do brasileirão</h1>
-                <p class="opacity-75">
-                  Veja quais clubes conquistaram o Brasileirão recentemente e relembre os campeões das últimas edições da principal competição nacional.
+                <h1>Os Craques do Brasileirão</h1>
+                <p>
+                  Conheça alguns dos principais jogadores da Série A do Campeonato Brasileiro."
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="campeoes.html">Veja mais</a>
+                  <a class="btn btn-lg btn-primary" href="campeoes.html">Saiba mais</a>
                 </p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <svg
-              aria-hidden="true"
-              class="bd-placeholder-img"
+            <img src="img/maracana.webp" alt=""class="foto-carrosel bd-placeholder-img"
               height="100%"
-              preserveAspectRatio="xMidYMid slice"
               width="100%"
-              xmlns="http://www.w3.org/2000/svg"
             >
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
+            <rect
+              width="100%"
+              height="100%"
+              fill="var(--bs-secondary-color)"
+            ></rect>
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
+                <h1>Talento em campo</h1>
                 <p>
-                  Some representative placeholder content for the second slide
-                  of the carousel.
+                  Dribles, gols, assistências e grandes defesas fazem parte do espetáculo.
                 </p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <svg
-              aria-hidden="true"
-              class="bd-placeholder-img"
-              height="100%"
-              preserveAspectRatio="xMidYMid slice"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
+            <img src="img/trofeu.webp" alt="" class="foto-carrosel bd-placeholder-img">
             <div class="container">
               <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
+                <h1>O futebol que emociona milhões</h1>
                 <p>
-                  Some representative placeholder content for the third slide of
-                  this carousel.
+                  Cada rodada revela novos destaques e momentos inesquecíveis.
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                  <a class="btn btn-lg btn-primary" href="#">Saiba mais</a>
                 </p>
               </div>
             </div>
@@ -351,14 +335,11 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <svg
-              aria-label="Placeholder"
+            <img
+              src="img/arias2.jpg" alt=""
               class="bd-placeholder-img rounded-circle"
               height="140"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
               width="140"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <title>Placeholder</title>
               <rect
@@ -366,7 +347,6 @@
                 height="100%"
                 fill="var(--bs-secondary-color)"
               ></rect>
-            </svg>
             <h2 class="fw-normal">Jhon Arias</h2>
             <p>
               Jhon Arias é um futebolista colombiano que atua como meio-campista ou ponta no Palmeiras.
@@ -377,14 +357,11 @@
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <svg
-              aria-label="Placeholder"
+            <img
+              src="img/cvinicius.jpg" alt="Carlos Vinícius"
               class="bd-placeholder-img rounded-circle"
               height="140"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
               width="140"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <title>Placeholder</title>
               <rect
@@ -392,7 +369,6 @@
                 height="100%"
                 fill="var(--bs-secondary-color)"
               ></rect>
-            </svg>
             <h2 class="fw-normal">Carlos Vinicius</h2>
             <p>
               Carlos Vinícius é um futebolista brasileiro que atua como centroavante no Grêmio.
@@ -403,14 +379,11 @@
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <svg
-              aria-label="Placeholder"
+            <img
+              src="img/leo-jardim.jpg" alt="Léo Jardim"
               class="bd-placeholder-img rounded-circle"
               height="140"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
               width="140"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <title>Placeholder</title>
               <rect

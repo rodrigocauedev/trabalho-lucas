@@ -48,3 +48,8 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+body {
+    background: linear-gradient(135deg, #006437, #0a2f6b);
+    color: white;
+}
